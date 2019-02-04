@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <!-- Basics -->
+    <meta charset = "utf-8">
+    <title>Flu Shot Finder</title>
+
+    <!-- Force IE/MS Edge out of compatibility mode -->
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge" />
+
+    <!-- Site Info -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Patrick Paxson">
+    <meta name = "description" content="Check out the app I developed during the UC Health Hack 2018.">
+    <meta name = "keywords" content = "Paxson, Patrick Paxson, prpaxson, Patrick Richard Paxson, Battle Royale, WVBR, Westview, Westview Battle Royale, Westview BR, APCS, AP Computer Science, AP, Final Project">
+
+    <!-- Favicons -->
+    <link rel = "icon" href = "../../images/icons/lumpy.jpg"/>
+
+    <!-- Stylesheets -->
+    <link rel = "stylesheet" href = "../../css/styles.css"/>
+    <link rel = "stylesheet" href = "../../css/links.css"/>
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity = "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin = "anonymous">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+    <!-- JavaScript Used -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src = "../../js/utils.js"></script>
+    <!-- Header Content -->
+    <header>
+      <h1>Flu Shot Finder</h1>
+      <div class = "hamburgerMenu" onclick = "animateMenu(this)">
+        <div class = "bar1"></div>
+        <div class = "bar2"></div>
+        <div class = "bar3"></div>
+      </div>
+    </header>
+    <div class="menu">
+      <a href = "../.." class = "menu_item"><i class="fas fa-home"></i> home</a>
+      <a href = "../../about" class = "menu_item"><i class="fas fa-question-circle"></i> about</a>
+      <a href = "../projects" class = "menu_item_with_options"><i class="fas fa-laptop"></i> projects
+        <i class="fas fa-caret-right"></i></a>
+      <a href = "../../resume" class = "menu_item"><i class="fas fa-edit"></i> résumé</a>
+      <a href = "../../contact" class = "menu_item"><i class="fas fa-user-friends"></i> contact</a>
+    </div>
+    <div class="side_menu">
+      <a href = "../72" class = "menu_item side_menu_item">72 Remastered</a>
+      <a href = "../WVBR" class = "menu_item side_menu_item">Westview BR</a>
+      <a href = "#" class = "menu_item side_menu_item">Flu Shot Finder</a>
+    </div>
+    <!-- Main Body Content -->
+    <main id = "dimmer">
+      <p>This is the app that I worked on during the <a href = "https://healthhack.uchealth.edu/#/home"> UC Health Hack 2018</a>.  It was designed mainly to locate the optimal location for getting a flu shot based on price, perks, and distance from you. We also wanted to digitize medical proof of getting flu shots by having a camera function to save the record to your phone or to a cloud service like Amazon Web Services.  It is still open for further development, so if you are interested in sponsoring it or fleshing it out further, please <a href = "../../contact">contact</a> me.</p>
+      <br>
+      <p>I developed the basic concept of this app, as well as basic proof of concept work with my roomate <a href = "https://www.linkedin.com/in/atatyazdi/">Ata</a> and three other students.  Unfortunately, we weren't quite able to get a technical demo with all of our planned features in place during the hackathon (turns out learning Swift in 24 hours is hard), but we did develop a clear idea of what we wanted the app to do and how to do it.</p>
+      <br>
+      <p>I am working on finishing the writeup describing the app and its features, and will have it available here for download once it's complete.</p>
+      <br>
+      <a download href = "FSFPresentation.pptx" class = "button"><i class="fas fa-download"></i> Download the Presentation</a>
+      <a href = "https://github.com/prpaxson/Flu-Shot-Finder" class = "button"><i class="fab fa-github"></i> Check it out on GitHub</a>
+    </main>
+    <!-- Footer Content -->
+    <footer>
+      <p>Patrick Paxson 2018</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  color: #414141;  # Dark gray
+  background-color: #EEEEEE;  # Light gray
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1
+{
+  font-size: 36px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+p
+{
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 20px 10px;  # Vertical then Horizontal
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right:50px;
+  text-align: left;
+}
+
+header
+{
+	height: 70px;
+	background-color: #3e739d;
+	border-bottom: 1px solid #494949;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  z-index: 990;
+}
+
+header > h1
+{
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+header > .hamburgerMenu
+{
+	position: absolute;
+	left: 20px;
+}
+
+header > .hamburgerMenu:hover
+{
+	color: #C18C62;
+}
+
+.hamburgerMenu
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3
+{
+    width: 35px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1
+{
+  /* first shifts the whole thing over 35/4-2.5/sqrt2 px to make it centered */
+  /* this corrects for the shifting that is done in the final transform */
+  /* x axis moves 5/2, 5 is height of the bar */
+  /* y axis moves 35/(2*sqrt2), 35 is width of the bar */
+  -webkit-transform: translate(-6.98223304703px, 0px) rotate(-45deg) translate(-2.5px, 12.3743686708px);
+  transform: translate(-6.98223304703px, 0px) rotate(-45deg) translate(-2.5px, 12.3743686708px);
+}
+
+.change .bar2
+{
+  opacity: 0;
+}
+
+.change .bar3
+{
+  /* first shifts the whole thing over 35/4-2.5/sqrt2 px to make it centered */
+  /* this corrects for the shifting that is done in the final transform */
+  /* x axis moves 5/2, 5 is height of the bar */
+  /* y axis moves 35/(2*sqrt2), 35 is width of the bar */
+  -webkit-transform: translate(-6.98223304703px, 0px) rotate(45deg) translate(-2.5px, -12.3743686708px);
+  transform: translate(-6.98223304703px, 0px) rotate(45deg) translate(-2.5px, -12.3743686708px);
+}
+
+.menu
+{
+	width: 300px;
+	background-color: #03a9f4;
+  position: absolute;
+  z-index: 980;
+	left: -300px;
+	transition: .4s all;
+  overflow: hidden;
+}
+
+.menu > hamburgerMenu
+{
+  padding: 5px;
+  margin: 15px 0 0px 20px;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+.side_menu
+{
+  position: absolute;
+  display: none;
+  background-color: #03a9f4;
+  width: 300px;
+  height: 210px;
+  left: 300px;
+  top: 210px;
+  z-index: 985;
+}
+
+main
+{
+	width: 100%;
+  min-height: calc(100vh - 120px);
+  height: calc(100vh - 120px);
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+footer
+{
+  z-index: 995;
+	height: 50px;
+	background-color: #494949;
+	color: #fff;
+	display: flex;
+  position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#toTop
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 996; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#toTop:hover
+{
+    background-color: green; /* Add a dark-grey background on hover */
+}
+
+.menu_show
+{
+	left: 0!important;
+}
+
+.menuIsOpen #dimmer
+{
+  /* Blur and de-color */
+  -webkit-filter: grayscale(50%) blur(5px);
+}
+
+@media screen and (max-width: 425px)
+{
+	header h1
+  {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px)
+{
+	.menu
+  {
+		width: 100%;
+		left: -100%;
+	}
+}

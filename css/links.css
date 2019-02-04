@@ -1,0 +1,107 @@
+a:link
+{
+  color: blue;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+a:visited
+{
+  color: purple;
+}
+
+a:hover
+{
+  color: aqua;
+  text-decoration: underline;
+}
+
+a:visited:hover
+{
+  color: orange;
+}
+
+a:active
+{
+  color: red;
+}
+
+a:visited:active
+{
+  color: red;
+}
+
+.button:link,
+.button:visited
+{
+  position: relative;
+  z-index: 100;
+  display: block;
+  text-decoration: none;
+
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover
+{
+  color: #FFF;
+  background-color: #76AEED;  # Light blue
+}
+
+.button:active,
+.button:visited:active
+{
+  color: #FFF;
+  background-color: #5995DA;  # Blue
+}
+
+.menu_item:link,
+.menu_item:visited,
+.menu_item_with_options:link,
+.menu_item_with_options:visited
+{
+  display: inline-block;
+  float: left;
+  width: 300px;
+	height: 70px;
+  color: #FFF;
+  background-color: #03a9f4;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.menu_item:hover,
+.menu_item:visited:hover,
+.menu_item_with_options:hover,
+.menu_item_with_options:visited:hover
+{
+  color: #FFF;
+  background-color: #76AEED;  # Light blue
+}
+
+.menu_item:active,
+.menu_item:visited:active,
+.menu_item_with_options:active,
+.menu_item_with_options:visited:active
+{
+  color: #FFF;
+  background-color: #3e739d;  # Navy blue
+}
+
+.side_menu_item
+{
+  font-size: 22px !important;
+}

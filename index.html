@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <!-- Basics -->
+    <meta charset = "utf-8">
+    <title>Patrick's Homepage</title>
+
+    <!-- Force IE/MS Edge out of compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Site Info -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Patrick Paxson">
+    <meta name = "description" content="My name is Patrick Paxson, and you've
+    stumbled upon my personal website.  Welcome!  This is a place where you can
+    find out things that I can do, the cool stuff I've done in the past, and
+    much more!  I hope you enjoy your time on my site.">
+    <meta name = "keywords" content = "Paxson, Patrick Paxson, prpaxson, Patrick Richard Paxson">
+
+    <!-- Favicons -->
+    <link rel = "icon" href = "images/icons/lumpy.jpg"/>
+
+    <!-- Stylesheets -->
+    <link rel = "stylesheet" href = "css/styles.css"/>
+    <link rel = "stylesheet" href = "css/links.css"/>
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity = "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin = "anonymous">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+    <!-- JavaScript Used -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src = "js/utils.js"></script>
+    <!-- Header Content -->
+    <header>
+      <h1>Welcome to my site</h1>
+      <div class = "hamburgerMenu" onclick = "animateMenu(this)">
+        <div class = "bar1"></div>
+        <div class = "bar2"></div>
+        <div class = "bar3"></div>
+      </div>
+    </header>
+    <div class="menu">
+      <a href = "#" class = "menu_item"><i class="fas fa-home"></i> home</a>
+      <a href = "about" class = "menu_item"><i class="fas fa-question-circle"></i> about</a>
+      <a href = "projects" class = "menu_item_with_options"><i class="fas fa-laptop"></i> Projects
+       <i class="fas fa-caret-right"></i></a>
+      <a href = "resume" class = "menu_item"><i class="fas fa-edit"></i> résumé</a>
+      <a href = "contact" class = "menu_item"><i class="fas fa-user-friends"></i> contact</a>
+    </div>
+    <div class="side_menu">
+      <a href = "projects/72" class = "menu_item side_menu_item">72 Remastered</a>
+      <a href = "projects/WVBR" class = "menu_item side_menu_item">Westview BR</a>
+      <a href = "projects/FluShotFinder" class="menu_item side_menu_item">Flu Shot Finder</a>
+    </div>
+    <!-- Main Body Content -->
+    <main id = "dimmer">
+      <p>My name is Patrick Paxson and I have more content coming Soon&trade;</p>
+      <p>For now, this website is a chance for me to practice my web development skills, and a place for me to try some creative website designs.</p>
+      <p>Stay tuned for some more cool stuff :)</p>
+    </main>
+    <!-- Footer Content -->
+    <footer>
+      <p>Patrick Paxson 2018</p>
+    </footer>
+  </body>
+
+</html>

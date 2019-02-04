@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <!-- Basics -->
+    <meta charset = "utf-8">
+    <title>Westview Battle Royale</title>
+
+    <!-- Force IE/MS Edge out of compatibility mode -->
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge" />
+
+    <!-- Site Info -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Patrick Paxson">
+    <meta name = "description" content="Check out the game I made in high school.">
+    <meta name = "keywords" content = "Paxson, Patrick Paxson, prpaxson, Patrick Richard Paxson, Battle Royale, WVBR, Westview, Westview Battle Royale, Westview BR, APCS, AP Computer Science, AP, Final Project">
+
+    <!-- Favicons -->
+    <link rel = "icon" href = "../../images/icons/lumpy.jpg"/>
+
+    <!-- Stylesheets -->
+    <link rel = "stylesheet" href = "../../css/styles.css"/>
+    <link rel = "stylesheet" href = "../../css/links.css"/>
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity = "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin = "anonymous">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+    <!-- JavaScript Used -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src = "../../js/utils.js"></script>
+    <!-- Header Content -->
+    <header>
+      <h1>Westview Battle Royale</h1>
+      <div class = "hamburgerMenu" onclick = "animateMenu(this)">
+        <div class = "bar1"></div>
+        <div class = "bar2"></div>
+        <div class = "bar3"></div>
+      </div>
+    </header>
+    <div class="menu">
+      <a href = "../.." class = "menu_item"><i class="fas fa-home"></i> home</a>
+      <a href = "../../about" class = "menu_item"><i class="fas fa-question-circle"></i> about</a>
+      <a href = "../projects" class = "menu_item_with_options"><i class="fas fa-laptop"></i> projects
+        <i class="fas fa-caret-right"></i></a>
+      <a href = "../../resume" class = "menu_item"><i class="fas fa-edit"></i> résumé</a>
+      <a href = "../../contact" class = "menu_item"><i class="fas fa-user-friends"></i> contact</a>
+    </div>
+    <div class="side_menu">
+      <a href = "../72" class = "menu_item side_menu_item">72 Remastered</a>
+      <a href = "#" class = "menu_item side_menu_item">Westview BR</a>
+      <a href = "../FluShotFinder" class = "menu_item side_menu_item">Flu Shot Finder</a>
+    </div>
+    <!-- Main Body Content -->
+    <main id = "dimmer">
+      <p>In my Junior year of high school, I took the Advanced Placement Computer Science class there.
+      At the end of the year, our final project was to create our own piece of software, from scratch.
+      Most people who took the class made games, but my group and I wanted ours to stand out as something special.
+      So, we decided to make a Street Fighter-esque game based on the teachers at our school. </p>
+      <br>
+      <p>We spent hours going around to teachers to ask them to let us take their pictures, grunt in a microphone,
+      and record some voice lines for us to put into the game.  We also took panoramic shots of iconic locations at
+      the school to use as background images, so the in-game fighting arenas could feel unique.  We painstakingly
+      grafted the teachers' faces onto some old Street Fighter sprites, and set to work coding.
+      <br>
+      <p>I wanted the game to be absolutely perfect, so I personally went all-out on the programming side of the game.
+      I implemented the scrolling backgrounds, something that caused a LOT of bugs during development, but ended up being
+      totally worth the time.  I made sure to include a Konami Code easter egg, something you can check out if you play the game ;)
+      I spent a great deal of time just making the base game/menu work properly, and tried my best to make the game as polished as possible
+      in the few weeks we had to work on it.  I learned a lot programmingwise from making the game, and use some of the techniques I learned today. </p>
+      <br>
+      <p>I also spent a lot of time editing sound files to make the punches, kicks, jumps, and crouches come alive for each character,
+      and I had a great time bringing these teachers that I had known for three years into this silly video game.
+      This game was made with a lot of love, but I hope to make games way better in the future. </p>
+      <a download href = "WVBR.jar" class = "button"><i class="fas fa-download"></i> Download the Game</a>
+      <a href = "https://github.com/JetpackCat39/BattleRoyale" target = "_blank" class = "button"><i class="fab fa-github"></i> Check out the Source Code</a>
+    </main>
+    <!-- Footer Content -->
+    <footer>
+      <p>Patrick Paxson 2018</p>
+    </footer>
+  </body>
+</html>

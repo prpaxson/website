@@ -1,0 +1,66 @@
+now=$(date +"%r")
+echo -e "\x1B[1;31mHello, Patrick"
+echo -e "\x1B[1;31mThe current time is: $now"
+echo -e "\x1B[1;36mQuote of the day:"
+#!/bin/mksh
+# ~/.profile
+fortune
+
+RED='\[\e[91m\]'
+BOLDYELLOW='\[\e[1;33m\]'
+GREEN='\[\e[0;32m\]'
+BLUE='\[\e[1;34m\]'
+DARKBROWN='\[\e[1;33m\]'
+DARKGRAY='\[\e[1;30m\]'
+CUSTOMCOLORMIX='\[\e[1;30m\]'
+DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
+LIGHTBLUE='\[\033[1;36m\]'
+PURPLE='\[\e[1;35m\]'
+NC='\[\e[0m\]' # No Color
+
+export PS1="${BLUE}\\u ${BOLDYELLOW}[\\w] ${PURPLE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
+
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+OpenInXcode() {
+	touch "$@"
+	open -a Xcode "$@"
+}
+
+export -f parse_git_branch
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+alias hs='history | grep '  # Automatically filter your bash history
+alias la='ls -a'  # E-Z-P-Z see everything
+alias mv='mv -i'  # Prompts before overwriting
+alias cp='cp -i'
+alias rm='rm -i'
+alias dog='cat'
+alias gitc='sh ~/.gitc/main.sh'
+alias snow='bash ~/snow'
+alias xcode='OpenInXcode'
+alias cd..='cd ../'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+alias .6='cd ../../../../../../'
+
+# Make logging into your account from your account a breeze:
+cs15user=cs15xjn  # Store username as a variable
+alias cs15='ssh -X ${cs15user}@ieng6.ucsd.edu'
+
+cs12user=cs12fkn
+alias cs12='ssh -X ${cs12user}@ieng6.ucsd.edu'
+
+alias healthpartners='ssh -i ~/tensorflow.pem ubuntu@54.166.91.170'
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
