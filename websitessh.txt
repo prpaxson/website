@@ -1,2 +1,0 @@
-#!/bin/sh
-sftp -i ../.ssh/id_rsa patrick@many.egoslike.us
